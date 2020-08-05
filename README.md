@@ -1,5 +1,14 @@
 # git-commands
 ## 명령어
+
+### Getting and Creating Projects
+```
+git init
+```
+```
+git clone {remote url}
+```
+### Basic Snapshotting
 ```
 git add .
 ```
@@ -7,10 +16,19 @@ git add .
 git commit -m "{commit message}"
 ```
 ```
-git push -u {remote name} HEAD
+git commit --amend
 ```
 ```
-git checkout -i {remote name}/{branch name}
+git reset --hard HEAD
+git reset --hard HEAD^
+git reset --hard HEAD~{the number of commits}
+```
+### Branching and Merging
+```
+git checkout {branch name}
+```
+```
+git checkout -t {remote name}/{branch name}
 ```
 ```
 git checkout -b {branch name}
@@ -19,12 +37,20 @@ git checkout -b {branch name}
 git checkout -D {branch name}
 ```
 ```
-git reset --hard HEAD
-git reset --hard HEAD^
-git reset --hard HEAD~{the number of commits}
+git branch -m {new branch name}
+```
+### Sharing and Updating Projects
+```
+git pull
 ```
 ```
-git checkout {branch name}
+git push -u {remote name} HEAD
+```
+```
+git push {remote name} --delete {branch name}
+```
+```
+git fetch
 ```
 ```
 git remote -v
@@ -33,37 +59,21 @@ git remote -v
 git remote add {remote name} {remote url}
 ```
 ```
-git push {remote name} --delete {branch name}
+git remote set-url {remote name} {new remote url}
 ```
+### Inspection and Comparison
 ```
-git branch -m {new branch name}
+git log
+```
+### Patching
+```
+git revert {commit ID}
 ```
 ```
 git rebase {branch name}
 ```
 ```
 git rebase -i HEAD~{the number of commits}
-```
-```
-git log
-```
-```
-git pull
-```
-```
-git fetch
-```
-```
-git clone {remote url}
-```
-```
-git remote set-url {remote name} {new remote url}
-```
-```
-git commit --amend
-```
-```
-git revert {commit ID}
 ```
 ---
 
