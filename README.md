@@ -21,7 +21,7 @@ git checkout -D {branch name}
 ```
 git reset --hard HEAD
 git reset --hard HEAD^
-git reset --hard HEAD~{the number of commits to reset}
+git reset --hard HEAD~{the number of commits}
 ```
 ```
 git checkout {branch name}
@@ -30,9 +30,41 @@ git checkout {branch name}
 git remote -v
 ```
 ```
+git remote add {remote name} {remote url}
+```
+```
 git push {remote name} --delete {branch name}
 ```
-
+```
+git branch -m {new branch name}
+```
+```
+git rebase {branch name}
+```
+```
+git rebase -i HEAD~{the number of commits}
+```
+```
+git log
+```
+```
+git pull
+```
+```
+git fetch
+```
+```
+git clone {remote url}
+```
+```
+git remote set-url {remote name} {new remote url}
+```
+```
+git commit --amend
+```
+```
+git revert {commit ID}
+```
 ---
 
 ## 참고 
