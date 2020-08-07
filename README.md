@@ -10,6 +10,9 @@ git clone {remote url}
 ```
 ### Basic Snapshotting
 ```
+git status
+```
+```
 git add .
 ```
 ```
@@ -25,6 +28,9 @@ git reset --hard HEAD~{the number of commits}
 ```
 ### Branching and Merging
 ```
+git branch -m {new branch name}
+```
+```
 git checkout {branch name}
 ```
 ```
@@ -37,9 +43,22 @@ git checkout -b {branch name}
 git checkout -D {branch name}
 ```
 ```
-git branch -m {new branch name}
+git log
+```
+```diff
+- git stash save (deprecated)
++ git stash push
+```
+```
+git stash pop
+```
+```
+git stash apply
 ```
 ### Sharing and Updating Projects
+```
+git fetch
+```
 ```
 git pull
 ```
@@ -48,9 +67,6 @@ git push -u {remote name} HEAD
 ```
 ```
 git push {remote name} --delete {branch name}
-```
-```
-git fetch
 ```
 ```
 git remote -v
@@ -67,15 +83,16 @@ git log
 ```
 ### Patching
 ```
-git revert {commit ID}
-```
-```
 git rebase {branch name}
 ```
 ```
 git rebase -i HEAD~{the number of commits}
 ```
+```
+git revert {commit ID}
+```
 ---
 
 ## 참고 
-> [@jeonghwan-kim](https://github.com/jeonghwan-kim)님의 리포지토리(https://github.com/jeonghwan-kim/git-usage)를 보고 생성해봤습니다.
+- [@jeonghwan-kim](https://github.com/jeonghwan-kim)님의 리포지토리(https://github.com/jeonghwan-kim/git-usage)를 보고 생성해봤습니다.
+- https://git-scm.com/docs
