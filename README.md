@@ -66,6 +66,7 @@ git pull
 git push -u {remote name} HEAD
 ```
 ```
+git push {remote name} :{branch name}
 git push {remote name} --delete {branch name}
 ```
 ```
